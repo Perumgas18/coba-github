@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading...</title>
+  <script>
+    // Ganti URL di bawah ini dengan URL Deployment Web App Apps Script Anda
+    const GAS_URL = "https://script.google.com/macros/s/AKfycbxYOUR_SCRIPT_ID_HERE/exec";
+
+    // Ambil parameter jika ada (misal: ?page=home) dan teruskan ke Apps Script
+    const queryString = window.location.search;
+    window.location.href = GAS_URL + queryString;
+  </script>
+</head>
+<body>
+  <p style="text-align: center; margin-top: 50px; font-family: sans-serif;">
+    Mengarahkan ke aplikasi...
+  </p>
+</body>
+</html>
